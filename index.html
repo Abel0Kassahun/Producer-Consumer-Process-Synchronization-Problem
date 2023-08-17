@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producer/Consumer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="description">
+            <p></p>
+            <img src="" alt="">
+        </section>
+
+        <section class="producer_consumer">
+            <div class="producer">
+                <div class="initial_option">
+                    <h1>Produce a Process</h1>
+                </div>
+
+            </div>
+
+            <div class="consumer">
+                <div class="initial_option">
+                    <h1>Consume a Process</h1>
+                </div>
+            </div>
+        </section>
+        
+        <div class="producing_process">
+            <label for="pr_name">Process Name</label>
+            <input id="pr_name" name="pr_name" type="text" required>
+            <label for="waiting_time">Waiting Time</label>
+            <input type="number" name="waiting_time" id="waiting_time">
+            <label for="buffer_time">Buffer Time</label>
+            <input type="number" name="buffer_time" id="buffer_time">
+            <div class="option">
+                <button class="create">Create</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </div>
+
+        <div class="consuming_process">
+            <h3>Are you sure ?</h3>
+            <button class="consume">Consume</button>
+            <button class="cancel">Cancel</button>
+        </div>
+
+        <div class="process_infn">
+            <!-- Process Name -->
+            <h3></h3>
+            <!-- Waiting Time -->
+            <h3></h3>
+            <!-- Buffer Time -->
+            <h3></h3>
+            <button>Close</button>
+        </div>
+
+        <section class="Buffer">
+            <h1>Buffer</h1>
+            <div class="buffer"></div>
+        </section>
+    </div>
+    
+
+    <script src="Javascript/index.js"></script>
+    <script src="Javascript/Semaphores.js"></script>
+    <script type="module" src="Javascript/producer.js"></script>
+    <script type="module" src="Javascript/consumer.js"></script>
+    <script type="module" src="Javascript/Buffer.js"></script>
+</body>
+</html>
