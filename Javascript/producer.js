@@ -108,7 +108,7 @@ function create_element(pr){
         process_infn_box.style.display = 'flex';
         process_infn[0].innerHTML = 'Process name :- ' + pr.name;
         process_infn[1].innerHTML = 'Waiting Time :- ' + pr.wt;
-        process_infn[2].innerHTML = 'Buffer TIme :- ' + pr.bt;
+        process_infn[2].innerHTML = 'Burst TIme :- ' + pr.bt;
 
         // setTimeout(() => {
         //     // The process information stops displaying after 3 seconds
